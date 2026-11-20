@@ -61,4 +61,10 @@ Revisé el código final con `grep` sobre todo el proyecto, con `bandit` (0 hall
 
 ## 6. Mis observaciones personales
 
-(Completar con lo que yo entendí, cambié o aprendí al revisar el código.)
+Usé Claude para armar la extensión de la ES3 sobre mi proyecto de la ES2, y después fui probando las cosas yo mismo en mi PC. Corrí las pruebas y el --sincronizar dos veces para ver que no se duplicaran datos.
+
+Lo que más cambié fue la contraseña: en la ES2 usaba PBKDF2 y ahora uso bcrypt porque lo pide la guía. También entendí que no se reintentan los errores 4xx porque repetir la misma petición mal hecha da el mismo error, en cambio con los 5xx o si se cae la red sí tiene sentido.
+
+Lo que me costó fue entender cómo funciona el Plan B y el UPSERT (ON CONFLICT) para que no se dupliquen los registros. Revisé el código buscando las 5 señales de riesgo y no encontré ninguna, pero igual dejé fijadas las versiones en requirements.txt.
+
+Me faltó probar más casos con las APIs reales, porque las pruebas automáticas usan un servidor falso.
