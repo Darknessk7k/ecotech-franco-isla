@@ -8,7 +8,6 @@
 | N° | Prompt (resumen) | Qué generó la IA |
 |----|------------------|------------------|
 | 1 | Entregué el enunciado de la ES3, la guía del docente, la rúbrica y mi proyecto EcoTech de la ES2, y pedí un paso a paso para extenderlo. | Plan de trabajo y el código nuevo: `api_cliente.py`, `servicio_externo.py`, `dominio/deserializador.py`, `dominio/datos_externos.py`, `dominio/validaciones.py`, `repositorio/externo_repo.py`, tablas `clima` y `tipo_cambio`, cambios en `main.py`, `seguridad.py` y `usuario.py`, y pruebas automáticas. |
-| 2 | (Pendiente: agregar aquí cualquier otro prompt que yo haga después.) | |
 
 APIs elegidas (ambas gratuitas y sin llave): **Open-Meteo** (clima, con geocodificación) y **mindicador.cl** (dólar y euro en pesos chilenos).
 
